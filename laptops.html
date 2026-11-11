@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link rel="icon" href="IMGS\ICON.png">
+    <script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 flex items-center justify-between px-8 h-16 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+    <div class="flex items-center gap-12">
+        <button type="button" onclick="window.location.reload()" aria-label="Refresh page" class="flex items-center gap-3 text-white hover:text-cyan-300 transition-colors">
+    <img src="IMGS\LOGO.png"" alt="WICHONE logo" class="h-10 w-100" />
+    <!-- <span class="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">WICHONE</span> -->
+</button>
+       
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="smartphones.html">Smartphones</a>
+            <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-['Space_Grotesk'] tracking-tight" href="laptops.html">Laptops</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="tablets.html">Tablets</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="wearables.html">Wearables</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="audio.html">Audio</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="ai_news.html">AI News</a>
+            <!-- <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="#">Tech News</a> -->
+        </div>
+    </div>
+    <div class="flex items-center gap-6">
+        <div class="hidden lg:flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-1.5 gap-2">
+            <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+            <input class="bg-transparent border-none focus:ring-secondary focus:border-secondary transition-all w-48 text-sm text-slate-200 placeholder-slate-500" placeholder="Search devices..." type="text"/>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-cyan-300 hover:bg-white/5 p-2 rounded-full transition-all duration-300">account_circle</span>
+            <button class="bg-cyan-500 text-slate-950 font-bold px-6 py-2 rounded-full text-sm active:scale-95 opacity-80 duration-200 ease-in-out">Sign In</button>
+        </div>
+    </div>
+</nav>
+<main class="pt-16 min-h-screen">
+<!-- Hero Section -->
+<section class="relative py-xl px-margin overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-md items-center">
+<div>
+<h1 class="font-h1 text-h1 text-white mb-md uppercase">Laptops <span class="text-secondary">Synthesis</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-lg">
+                        Precision-engineered hardware curated for the modern synthesis of data, creativity, and power. Explore the apex of mobile computing.
+                    </p>
+<div class="flex space-x-md">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] transition-all">
+                            View All Series <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative h-80 lg:h-[500px] w-full rounded-2xl overflow-hidden glass-card">
+<img class="w-full h-full object-cover opacity-80" data-alt="Modern sleek laptop with backlit keyboard in a dark minimal tech environment with cyan ambient lighting" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=1000"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Filters & Tools -->
+<section class="sticky top-16 z-40 bg-slate-950/60 backdrop-blur-md border-y border-white/5 px-margin py-base">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-md">
+<div class="flex items-center space-x-md overflow-x-auto pb-2 md:pb-0">
+<span class="text-label-caps font-label-caps text-on-surface-variant">Filter by:</span>
+<button class="px-4 py-1 rounded-full border border-secondary text-secondary text-sm font-medium">All Laptops</button>
+<button class="px-4 py-1 rounded-full border border-outline text-on-surface-variant text-sm font-medium hover:border-secondary transition-colors">Performance</button>
+<button class="px-4 py-1 rounded-full border border-outline text-on-surface-variant text-sm font-medium hover:border-secondary transition-colors">Ultraportable</button>
+<button class="px-4 py-1 rounded-full border border-outline text-on-surface-variant text-sm font-medium hover:border-secondary transition-colors">Creative</button>
+</div>
+<div class="flex items-center space-x-md">
+<label class="flex items-center cursor-pointer">
+<span class="mr-3 text-sm text-on-surface-variant font-medium">Show Differences</span>
+<div class="relative">
+<input class="sr-only" type="checkbox"/>
+<div class="block bg-surface-container-highest w-10 h-6 rounded-full border border-outline-variant"></div>
+<div class="dot absolute left-1 top-1 bg-secondary w-4 h-4 rounded-full transition"></div>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="py-lg px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-lg">
+<!-- Product Card 1 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col">
+<div class="h-64 relative bg-surface-container-low p-8 flex items-center justify-center">
+<img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded" data-alt="MacBook Pro M3 Max in Space Black with a vibrant retina display showing high-end graphics" src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&q=80&w=600"/>
+<div class="absolute top-4 left-4">
+<span class="bg-on-tertiary-container/20 text-on-tertiary-container px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest border border-on-tertiary-container/30">Premium</span>
+</div>
+</div>
+<div class="p-gutter flex-1 flex flex-col">
+<div class="mb-sm">
+<h3 class="font-h3 text-h3 text-white uppercase mb-1">MacBook Pro M3 Max</h3>
+<p class="text-on-surface-variant text-sm font-medium">Apple Silicon Architecture</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-lg text-table-data font-table-data text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="memory">memory</span>
+                                128GB Unified Memory
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="display_settings">display_settings</span>
+                                Liquid Retina XDR
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="battery_full">battery_full</span>
+                                22hr Battery Life
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="storage">storage</span>
+                                8TB SSD Storage
+                            </div>
+</div>
+<div class="mt-auto pt-md border-t border-white/5 flex items-center justify-between">
+<span class="text-h3 font-h3 text-white">$3,499</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline hover:border-secondary hover:text-secondary rounded transition-colors" title="Compare">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+</button>
+<a href="smartphones.html" class="inline-block bg-white text-background px-6 py-2 rounded font-bold hover:bg-secondary transition-colors text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Analyze</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col">
+<div class="h-64 relative bg-surface-container-low p-8 flex items-center justify-center">
+<img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded" data-alt="Dell XPS 17 Laptop with infinity edge display and minimalist carbon fiber interior" src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&q=80&w=600"/>
+<div class="absolute top-4 left-4">
+<span class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30">Efficiency</span>
+</div>
+</div>
+<div class="p-gutter flex-1 flex flex-col">
+<div class="mb-sm">
+<h3 class="font-h3 text-h3 text-white uppercase mb-1">Dell XPS 17</h3>
+<p class="text-on-surface-variant text-sm font-medium">Intel Core i9-14900K</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-lg text-table-data font-table-data text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="memory">memory</span>
+                                64GB DDR5 RAM
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="aspect_ratio">aspect_ratio</span>
+                                4K InfinityEdge
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="videogame_asset">videogame_asset</span>
+                                RTX 4070 GPU
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="speed">speed</span>
+                                5.2GHz Clock Speed
+                            </div>
+</div>
+<div class="mt-auto pt-md border-t border-white/5 flex items-center justify-between">
+<span class="text-h3 font-h3 text-white">$2,899</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline hover:border-secondary hover:text-secondary rounded transition-colors" title="Compare">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+</button>
+<a href="smartphones.html" class="inline-block bg-white text-background px-6 py-2 rounded font-bold hover:bg-secondary transition-colors text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Analyze</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col">
+<div class="h-64 relative bg-surface-container-low p-8 flex items-center justify-center">
+<img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded" data-alt="ASUS ROG Zephyrus G14 gaming laptop with AniMe Matrix LED lid display and cyber punk lighting" src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=600"/>
+<div class="absolute top-4 left-4">
+<span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest border border-purple-500/30">Performance</span>
+</div>
+</div>
+<div class="p-gutter flex-1 flex flex-col">
+<div class="mb-sm">
+<h3 class="font-h3 text-h3 text-white uppercase mb-1">ROG Zephyrus G14</h3>
+<p class="text-on-surface-variant text-sm font-medium">AMD Ryzen 9 8945HS</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-lg text-table-data font-table-data text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="refresh">refresh</span>
+                                165Hz OLED
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="videogame_asset">videogame_asset</span>
+                                RTX 4080 GPU
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="weight">weight</span>
+                                1.5kg Ultra-light
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="flare">flare</span>
+                                AniMe Matrix
+                            </div>
+</div>
+<div class="mt-auto pt-md border-t border-white/5 flex items-center justify-between">
+<span class="text-h3 font-h3 text-white">$2,199</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline hover:border-secondary hover:text-secondary rounded transition-colors" title="Compare">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+</button>
+<a href="smartphones.html" class="inline-block bg-white text-background px-6 py-2 rounded font-bold hover:bg-secondary transition-colors text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Analyze</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col">
+<div class="h-64 relative bg-surface-container-low p-8 flex items-center justify-center">
+<img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded" data-alt="Lenovo ThinkPad X1 Carbon laptop in professional matte black with red trackpoint" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&q=80&w=600"/>
+<div class="absolute top-4 left-4">
+<span class="bg-slate-500/20 text-slate-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest border border-slate-500/30">Enterprise</span>
+</div>
+</div>
+<div class="p-gutter flex-1 flex flex-col">
+<div class="mb-sm">
+<h3 class="font-h3 text-h3 text-white uppercase mb-1">ThinkPad X1 Carbon</h3>
+<p class="text-on-surface-variant text-sm font-medium">Intel vPro Tech</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-lg text-table-data font-table-data text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="security">security</span>
+                                Bio-auth Secure
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="keyboard">keyboard</span>
+                                Spill-Resistant
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="bolt">bolt</span>
+                                Thunderbolt 4
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="signal_cellular_alt">signal_cellular_alt</span>
+                                5G Integrated
+                            </div>
+</div>
+<div class="mt-auto pt-md border-t border-white/5 flex items-center justify-between">
+<span class="text-h3 font-h3 text-white">$1,999</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline hover:border-secondary hover:text-secondary rounded transition-colors" title="Compare">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+</button>
+<a href="smartphones.html" class="inline-block bg-white text-background px-6 py-2 rounded font-bold hover:bg-secondary transition-colors text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Analyze</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col">
+<div class="h-64 relative bg-surface-container-low p-8 flex items-center justify-center">
+<img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded" data-alt="Microsoft Surface Laptop Studio showing its unique flip hinge screen for creative work" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=600"/>
+<div class="absolute top-4 left-4">
+<span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest border border-green-500/30">Creator</span>
+</div>
+</div>
+<div class="p-gutter flex-1 flex flex-col">
+<div class="mb-sm">
+<h3 class="font-h3 text-h3 text-white uppercase mb-1">Surface Studio 2</h3>
+<p class="text-on-surface-variant text-sm font-medium">Multi-mode Hinge</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-lg text-table-data font-table-data text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="edit">edit</span>
+                                Surface Slim Pen 2
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="touch_app">touch_app</span>
+                                14.4" PixelSense
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="videogame_asset">videogame_asset</span>
+                                RTX 4050 GPU
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="refresh">refresh</span>
+                                120Hz Dynamic
+                            </div>
+</div>
+<div class="mt-auto pt-md border-t border-white/5 flex items-center justify-between">
+<span class="text-h3 font-h3 text-white">$2,399</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline hover:border-secondary hover:text-secondary rounded transition-colors" title="Compare">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+</button>
+<a href="smartphones.html" class="inline-block bg-white text-background px-6 py-2 rounded font-bold hover:bg-secondary transition-colors text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Analyze</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300 flex flex-col border-dashed border-secondary/50 border-2">
+<div class="h-full flex flex-col items-center justify-center p-lg text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-md" data-icon="add_circle">add_circle</span>
+<h3 class="font-h3 text-h3 text-white uppercase mb-sm">Custom Build</h3>
+<p class="text-on-surface-variant text-sm max-w-[200px] mb-lg">Configure a bespoke hardware stack tailored to your synthesis requirements.</p>
+<button class="border border-secondary text-secondary px-8 py-2 rounded-lg font-bold hover:bg-secondary hover:text-on-secondary transition-all">
+                            Start Config
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full border-t border-slate-800 pt-12 pb-8">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 font-['Space_Grotesk'] text-sm">
+<div>
+<div class="text-xl font-black text-slate-200 mb-4">WICHONE</div>
+<p class="text-slate-500 max-w-sm mb-6">Ã‚Â© 2024 WICHONE. Precision engineered hardware synthesis.</p>
+<div class="flex space-x-6">
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="podcasts">podcasts</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-3">
+<span class="text-cyan-500 font-bold uppercase tracking-wider text-xs mb-2">Legal</span>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="text-cyan-500 font-bold uppercase tracking-wider text-xs mb-2">Dev</span>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">API Documentation</a>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">Affiliate Disclosure</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="text-cyan-500 font-bold uppercase tracking-wider text-xs mb-2">Help</span>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">Support</a>
+<a class="text-slate-500 hover:text-purple-400 transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="index.js"></script>
+</body></html>
+
+

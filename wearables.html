@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Wearables Synthesis | WICHONE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="IMGS\ICON.png">
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen">
+    <!-- TopNavBar -->
+    <nav class="sticky top-0 w-full z-50 flex items-center justify-between px-8 h-16 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+        <div class="flex items-center gap-12">
+            <button type="button" onclick="window.location.reload()" aria-label="Refresh page" class="flex items-center gap-3 text-white hover:text-cyan-300 transition-colors">
+    <img src="IMGS\LOGO.png"" alt="WICHONE logo" class="h-10 w-100" />
+    <!-- <span class="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">WICHONE</span> -->
+</button>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="smartphones.html">Smartphones</a>
+                <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="laptops.html">Laptops</a>
+                <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="tablets.html">Tablets</a>
+                <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-['Space_Grotesk'] tracking-tight" href="wearables.html">Wearables</a>
+                <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="audio.html">Audio</a>
+                <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="ai_news.html">AI News</a>
+                <!-- <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="#">Tech News</a> -->
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden lg:flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-1.5 gap-2">
+                <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                <input class="bg-transparent border-none focus:ring-secondary focus:border-secondary transition-all w-48 text-sm text-slate-200 placeholder-slate-500" placeholder="Search devices..." type="text"/>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-cyan-300 hover:bg-white/5 p-2 rounded-full transition-all duration-300">account_circle</span>
+                <button class="bg-cyan-500 text-slate-950 font-bold px-6 py-2 rounded-full text-sm active:scale-95 opacity-80 duration-200 ease-in-out">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-margin py-xl space-y-xl">
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-cyan-400 font-label-caps tracking-widest uppercase mb-4">Precision Synthesis</p>
+                <h1 class="font-h1 text-h1 text-white mb-6">Engineered for the<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">Human Form.</span></h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-8">
+                    A definitive synthesis of biomechanical data and high-performance aesthetics. Discover the intersection of computational power and personal health monitoring.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-gradient-to-r from-cyan-400 to-purple-500 text-white font-bold px-6 py-3 rounded text-sm hover:opacity-90 transition-all">
+                        EXPLORE CATALOG
+                    </button>
+                    <button class="border border-outline-variant text-white font-bold px-6 py-3 rounded text-sm hover:bg-white/5 transition-all">
+                        WATCH FILM
+                    </button>
+                </div>
+            </div>
+            <div class="relative rounded-2xl glass-panel overflow-hidden bg-gradient-to-tr from-green-50 to-cyan-50 flex items-center justify-center h-[500px]">
+                <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&q=80&w=800" alt="Apple Watch" class="h-full object-cover mix-blend-multiply opacity-90 scale-125">
+            </div>
+        </section>
+
+        <!-- The Synthesis Collection -->
+        <section>
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="font-h2 text-h2 text-white">The Synthesis Collection</h2>
+                    <p class="text-on-surface-variant text-sm">Top-tier hardware curated for technical excellence.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-xs text-cyan-400 font-bold uppercase tracking-widest">Diffs Only</span>
+                    <button class="relative w-10 h-5 bg-surface-container-highest rounded-full border border-white/10">
+                        <div class="absolute right-1 top-1 w-3 h-3 bg-cyan-400 rounded-full shadow-sm"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Apple Watch Ultra Card -->
+                <div class="md:col-span-8 glass-card rounded-xl p-8 border border-white/10 flex flex-col md:flex-row gap-8 glow-hover transition-all duration-300">
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-h3 text-h3 text-white mb-2">Apple Watch Ultra 2</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            The ultimate multisport tool. Featuring the brightest display ever and high-precision dual-frequency GPS.
+                        </p>
+                        <div class="flex gap-2 mb-8 flex-wrap">
+                            <span class="bg-surface-container-high text-xs px-3 py-1.5 rounded border border-white/5 font-bold uppercase text-slate-300">3000 NITS</span>
+                            <span class="bg-surface-container-high text-xs px-3 py-1.5 rounded border border-white/5 font-bold uppercase text-slate-300">S9 SIP</span>
+                            <span class="bg-surface-container-high text-xs px-3 py-1.5 rounded border border-white/5 font-bold uppercase text-slate-300">60H BATTERY</span>
+                        </div>
+                        <div>
+                            <button class="text-cyan-400 font-bold flex items-center gap-2 hover:text-cyan-300 transition-colors text-sm">
+                                VIEW SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:w-64 h-64 bg-surface-container-low rounded-xl overflow-hidden relative flex items-center justify-center p-4">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&q=80&w=400" alt="Apple Watch Ultra" class="h-full object-contain mix-blend-screen opacity-90 hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Pixel Watch 2 Card -->
+                <div class="md:col-span-4 glass-card rounded-xl p-8 border border-white/10 flex flex-col glow-hover transition-all duration-300">
+                    <h3 class="text-white font-bold mb-2">Pixel Watch 2</h3>
+                    <p class="text-xs text-slate-400 mb-4 line-clamp-2">Personalized health meets Google AI. Sleek, domed glass architecture.</p>
+                    <div class="mb-6">
+                        <span class="bg-purple-500/20 text-purple-400 text-[10px] px-2 py-1 rounded font-bold uppercase border border-purple-500/30">AI SYNTHESIS</span>
+                    </div>
+                    <div class="flex-1 bg-white rounded-lg overflow-hidden flex items-center justify-center p-4 h-32 relative">
+                        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&q=80&w=400" alt="Pixel Watch 2" class="h-full object-contain">
+                    </div>
+                </div>
+
+                <!-- Garmin Fenix Card -->
+                <div class="md:col-span-4 glass-card rounded-xl p-8 border border-white/10 flex flex-col glow-hover transition-all duration-300 relative">
+                    <div class="mb-4">
+                        <span class="material-symbols-outlined text-cyan-400 text-3xl">satellite_alt</span>
+                    </div>
+                    <h3 class="text-white font-bold mb-2">Garmin Fenix 7X</h3>
+                    <p class="text-xs text-slate-400 mb-8 flex-1 leading-relaxed">Solar charging. Built-in LED flashlight. Professional grade endurance metrics.</p>
+                    <div class="flex justify-between items-end mt-auto">
+                        <span class="text-white font-bold">$899.00</span>
+                        <button class="bg-surface-container-high border border-white/10 p-2 rounded hover:bg-white/5 transition-colors text-cyan-400">
+                            <span class="material-symbols-outlined text-sm">shopping_cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="md:col-span-8 glass-card rounded-xl border border-white/10 overflow-hidden flex flex-col">
+                    <div class="p-6 border-b border-white/5 flex justify-between items-center bg-surface-container-low">
+                        <h3 class="font-label-caps text-slate-300 tracking-widest text-[10px]">SYSTEMS COMPARISON</h3>
+                        <span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest border border-cyan-400/30 bg-cyan-400/10 px-2 py-0.5 rounded">Latest Firmware Verified</span>
+                    </div>
+                    <div class="overflow-x-auto flex-1">
+                        <table class="w-full text-left h-full">
+                            <thead>
+                                <tr class="text-[10px] font-bold uppercase tracking-widest text-slate-500 border-b border-white/5 bg-surface-container-lowest">
+                                    <th class="px-6 py-4">Attribute</th>
+                                    <th class="px-6 py-4 text-cyan-400">Ultra 2</th>
+                                    <th class="px-6 py-4">Fenix 7X</th>
+                                    <th class="px-6 py-4 text-purple-400">Pixel 2</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-white/5 text-xs text-slate-300">
+                                <tr class="hover:bg-white/[0.02] transition-colors">
+                                    <td class="px-6 py-4 text-slate-500 font-medium">Display</td>
+                                    <td class="px-6 py-4 text-white">OLED 3000 nits</td>
+                                    <td class="px-6 py-4">MIP Solar</td>
+                                    <td class="px-6 py-4">AMOLED 1000 nits</td>
+                                </tr>
+                                <tr class="hover:bg-white/[0.02] transition-colors bg-cyan-900/10">
+                                    <td class="px-6 py-4 text-slate-500 font-medium">Battery</td>
+                                    <td class="px-6 py-4">36-60 Hours</td>
+                                    <td class="px-6 py-4 text-cyan-400 font-bold">28-37 Days</td>
+                                    <td class="px-6 py-4">24 Hours</td>
+                                </tr>
+                                <tr class="hover:bg-white/[0.02] transition-colors">
+                                    <td class="px-6 py-4 text-slate-500 font-medium">Sensors</td>
+                                    <td class="px-6 py-4">ECG, SpO2, Temp</td>
+                                    <td class="px-6 py-4">Pulse Ox, HRM</td>
+                                    <td class="px-6 py-4">EDA, ECG, Temp</td>
+                                </tr>
+                                <tr class="hover:bg-white/[0.02] transition-colors">
+                                    <td class="px-6 py-4 text-slate-500 font-medium">Build</td>
+                                    <td class="px-6 py-4">Titanium</td>
+                                    <td class="px-6 py-4">Titanium/Polymer</td>
+                                    <td class="px-6 py-4">Recycled Alum</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-4xl mx-auto py-12">
+            <div class="glass-panel rounded-2xl p-12 text-center border border-white/10 relative overflow-hidden bg-gradient-to-br from-surface-container-high to-surface-container">
+                <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% -20%, #4cd7f6 0%, transparent 60%);"></div>
+                <h2 class="font-h2 text-h2 text-white mb-4 relative z-10">Join the Synthesis</h2>
+                <p class="text-slate-400 text-sm mb-8 relative z-10 max-w-md mx-auto">Get technical whitepapers and exclusive release alerts for next-generation wearables.</p>
+                <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto relative z-10">
+                    <input type="email" placeholder="Enter identification (email)" class="flex-1 bg-surface-container-lowest border border-white/10 rounded px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition-all">
+                    <button class="bg-cyan-400 text-slate-900 font-bold px-8 py-3 rounded text-sm hover:shadow-[0_0_15px_rgba(76,215,246,0.5)] transition-all uppercase tracking-wider">SUBSCRIBE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 w-full border-t border-slate-800 pt-12 pb-8 mt-xl">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 font-['Space_Grotesk'] text-sm">
+            <div>
+                <div class="text-xl font-black text-slate-200 mb-4 uppercase">Wichone</div>
+                <p class="text-slate-500 max-w-sm mb-6 text-xs">© 2024 WICHONE. Precision engineered hardware synthesis. All metrics verified via laboratory standards.</p>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="flex flex-col space-y-3">
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">Privacy Policy</a>
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">Terms of Service</a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">API Documentation</a>
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">Support</a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">Contact Us</a>
+                    <a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs" href="#">Affiliate Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

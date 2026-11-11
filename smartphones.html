@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link rel="icon" href="IMGS\ICON.png">
+    <script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary/30">
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 flex items-center justify-between px-8 h-16 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+    <div class="flex items-center gap-12">
+        <button type="button" onclick="window.location.reload()" aria-label="Refresh page" class="flex items-center gap-3 text-white hover:text-cyan-300 transition-colors">
+    <img src="IMGS\LOGO.png"" alt="WICHONE logo" class="h-10 w-100" />
+    <!-- <span class="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">WICHONE</span> -->
+</button>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-['Space_Grotesk'] tracking-tight" href="smartphones.html">Smartphones</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="laptops.html">Laptops</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="tablets.html">Tablets</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="wearables.html">Wearables</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="audio.html">Audio</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="ai_news.html">AI News</a>
+            <!-- <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="#">Tech News</a> -->
+        </div>
+    </div>
+    <div class="flex items-center gap-6">
+        <div class="hidden lg:flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-1.5 gap-2">
+            <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+            <input class="bg-transparent border-none focus:ring-secondary focus:border-secondary transition-all w-48 text-sm text-slate-200 placeholder-slate-500" placeholder="Search devices..." type="text"/>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-cyan-300 hover:bg-white/5 p-2 rounded-full transition-all duration-300">account_circle</span>
+            <button class="bg-cyan-500 text-slate-950 font-bold px-6 py-2 rounded-full text-sm active:scale-95 opacity-80 duration-200 ease-in-out">Sign In</button>
+        </div>
+    </div>
+</nav>
+<main class="max-w-7xl mx-auto px-margin py-xl">
+<!-- Hero Selection -->
+<section class="mb-xl">
+<div class="flex flex-col items-center text-center mb-lg">
+<h1 class="font-h1 text-h1 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Compare Tech Precisely</h1>
+<p class="text-on-primary-container max-w-2xl text-body-lg font-body-lg">Deep dive into technical specifications to help you choose your next device. Select a category and models to begin.</p>
+</div>
+<div class="glass-panel rounded-xl p-8 grid grid-cols-1 md:grid-cols-3 gap-gutter items-center">
+<!-- Device 1 Select -->
+<div class="space-y-4">
+<label class="block font-label-caps text-label-caps text-secondary mb-2">First Device</label>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-secondary outline-none appearance-none">
+<option>Smartphones</option>
+</select>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-secondary outline-none appearance-none">
+<option>Apple</option>
+</select>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-secondary outline-none appearance-none">
+<option>iPhone 15 Pro Max</option>
+</select>
+</div>
+<!-- Splitter -->
+<div class="flex flex-col items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center shadow-lg glow-cyan">
+<span class="material-symbols-outlined text-white font-bold">bolt</span>
+</div>
+<div class="h-12 w-px bg-gradient-to-b from-transparent via-outline-variant to-transparent my-2"></div>
+<button class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:text-white transition-colors">Swap Selection</button>
+</div>
+<!-- Device 2 Select -->
+<div class="space-y-4">
+<label class="block font-label-caps text-label-caps text-tertiary mb-2">Second Device</label>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-tertiary outline-none appearance-none">
+<option>Smartphones</option>
+</select>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-tertiary outline-none appearance-none">
+<option>Samsung</option>
+</select>
+<select class="w-full bg-surface-container-high border border-outline-variant rounded-lg p-3 text-on-surface focus:border-tertiary outline-none appearance-none">
+<option>Galaxy S24 Ultra</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Product Visuals -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-xl">
+<div class="flex flex-col items-center group">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 border border-white/5 transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Modern smartphone showing professional screen on dark reflective surface with cinematic cyan lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdIGGrJGXqvjuhfUuZ8phXG4ZHcTkjvDz61fDYJ5ARohNdRujMh-uc9_8evsNXCmHmgJQs58D8pbY9URHHgYhiLw0hZqvtWWze5LYNXSBgDWaHxzwG0stUNGbVfGF0mTcmikL76bT7VMAFk0aSGwoO3faP4PAypqZdOqHbHS6bC3B6qUqMHJhCFCpGo_nS9VzBeoMKQBVij97HRkaMs0CnQGpC5l-xWVLelgLIsdsBRU3_2BGJPHfALRyFJjphbxVIgn0R_e99D5Yp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-left">
+<span class="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-xs font-bold mb-2">Best Seller</span>
+<h3 class="font-h3 text-h3 text-white">iPhone 15 Pro Max</h3>
+</div>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white font-bold rounded-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] transition-all active:scale-95">Buy Now</button>
+</div>
+<div class="flex flex-col items-center group">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 border border-white/5 transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="High-end android flagship phone with triple camera setup on dark sleek background with purple neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8RTZZm20fYZkBMU7uqGfgfWL13WxjfS0NyY8uvhMjVws0O281zYyQI_mnwuMZcV9QF2cHj19WTf4y3t5_XHYDnO1cJHd0EBbD9Vt4hKaXroXfhZ6UvbwhMBTE1vCQ5GFH7BDBOdWn1s0teYVHZZSahpwtw0YhFSjw9_b63LYL1nRFjzzHrSEmGzD-jOZQ9-OD1t43p_5AFIOK1axiO9AnbhbtIyE6b1YM7UN0T6zV6fNIp4Tglj5mfhAFgnN8Jm3HoYl4UivpTKIT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-left">
+<span class="inline-block bg-tertiary/20 text-tertiary px-3 py-1 rounded-full text-xs font-bold mb-2">Top Performance</span>
+<h3 class="font-h3 text-h3 text-white">Galaxy S24 Ultra</h3>
+</div>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-tertiary-container to-on-tertiary-fixed-variant text-white font-bold rounded-lg hover:shadow-[0_0_30px_rgba(145,98,252,0.3)] transition-all active:scale-95">Buy Now</button>
+</div>
+</section>
+<!-- Detailed Specs Table -->
+<section>
+<div class="flex items-center justify-between mb-gutter">
+<h2 class="font-h2 text-h2 text-white">Technical Specifications</h2>
+<div class="flex items-center gap-3">
+<span class="text-sm text-slate-400">Show differences only</span>
+<button class="relative w-12 h-6 bg-surface-container-highest rounded-full border border-white/10">
+<div class="absolute left-1 top-1 w-4 h-4 bg-secondary rounded-full shadow-sm"></div>
+</button>
+</div>
+</div>
+<div class="overflow-hidden rounded-xl border border-white/10 glass-panel">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-white/10">
+<th class="p-6 font-label-caps text-label-caps text-slate-400 w-1/4">Feature</th>
+<th class="p-6 font-h3 text-h3 text-secondary text-center">iPhone 15 Pro Max</th>
+<th class="p-6 font-h3 text-h3 text-tertiary text-center">Galaxy S24 Ultra</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<!-- Processor -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">memory</span>
+<span class="font-medium">Processor</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">A17 Pro (3nm)</td>
+<td class="p-6 text-center font-table-data text-table-data text-white bg-purple-500/5">Snapdragon 8 Gen 3</td>
+</tr>
+<!-- RAM -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">settings_input_component</span>
+<span class="font-medium">RAM</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">8GB LPDDR5X</td>
+<td class="p-6 text-center font-table-data text-table-data text-white bg-purple-500/5">12GB LPDDR5X</td>
+</tr>
+<!-- Display -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">tv</span>
+<span class="font-medium">Display</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">6.7" Super Retina XDR</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">6.8" Dynamic AMOLED 2X</td>
+</tr>
+<!-- Battery -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">battery_charging_full</span>
+<span class="font-medium">Battery</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">4,441 mAh</td>
+<td class="p-6 text-center font-table-data text-table-data text-white bg-purple-500/5">5,000 mAh</td>
+</tr>
+<!-- Camera -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">photo_camera</span>
+<span class="font-medium">Main Camera</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">48MP Main | 12MP Ultra Wide</td>
+<td class="p-6 text-center font-table-data text-table-data text-white bg-purple-500/5">200MP Main | 50MP Periscope</td>
+</tr>
+<!-- Price -->
+<tr class="hover:bg-white/[0.03] transition-colors">
+<td class="p-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary opacity-70">payments</span>
+<span class="font-medium">Estimated Price</span>
+</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">$1,199</td>
+<td class="p-6 text-center font-table-data text-table-data text-white">$1,299</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Comparison Summary / Feature Highlight -->
+<section class="mt-xl grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-panel p-8 rounded-xl border-l-4 border-l-secondary">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4" data-weight="fill">verified</span>
+<h4 class="font-h3 text-h3 mb-2 text-white">iPhone Advantage</h4>
+<p class="text-on-primary-container text-sm">Excels in ecosystem integration, single-core performance, and professional ProRes video recording.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl border-l-4 border-l-tertiary">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4" data-weight="fill">auto_awesome</span>
+<h4 class="font-h3 text-h3 mb-2 text-white">Galaxy Advantage</h4>
+<p class="text-on-primary-container text-sm">Leads in display resolution, battery capacity, integrated AI features, and S-Pen functionality.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl border-l-4 border-l-outline">
+<span class="material-symbols-outlined text-outline text-3xl mb-4" data-weight="fill">balance</span>
+<h4 class="font-h3 text-h3 mb-2 text-white">Final Verdict</h4>
+<p class="text-on-primary-container text-sm">Both represent the pinnacle of technology; choice depends on OS preference and specific photography needs.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/5">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<span class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-slate-500">Â© 2024 WICHONE PREMIER ANALYTICS</span>
+<div class="flex items-center gap-6">
+<a class="text-slate-600 hover:text-cyan-400 transition-colors font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-slate-600 hover:text-cyan-400 transition-colors font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-slate-600 hover:text-cyan-400 transition-colors font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">Compare Methodology</a>
+<a class="text-slate-600 hover:text-cyan-400 transition-colors font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">API Documentation</a>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">public</span>
+</button>
+<button class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">share</span>
+</button>
+</div>
+</footer>
+<script src="index.js"></script>
+</body></html>
+
+

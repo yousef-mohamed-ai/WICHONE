@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI News | WICHONE - Tech Comparison Engine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link rel="icon" href="IMGS\ICON.png">
+
+    <script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 flex items-center justify-between px-8 h-16 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+    <div class="flex items-center gap-12">
+        <button type="button" onclick="window.location.reload()" aria-label="Refresh page" class="flex items-center gap-3 text-white hover:text-cyan-300 transition-colors">
+    <img src="IMGS\LOGO.png"" alt="WICHONE logo" class="h-10 w-100" />
+    <!-- <span class="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">WICHONE</span> -->
+</button>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="smartphones.html">Smartphones</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="laptops.html">Laptops</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="tablets.html">Tablets</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="wearables.html">Wearables</a>
+            <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="audio.html">Audio</a>
+            <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-['Space_Grotesk'] tracking-tight" href="ai_news.html">AI News</a>
+            <!-- <a class="text-slate-400 font-medium hover:text-cyan-300 hover:bg-white/5 transition-all duration-300 font-['Space_Grotesk'] tracking-tight" href="#">Tech News</a> -->
+        </div>
+    </div>
+    <div class="flex items-center gap-6">
+        <div class="hidden lg:flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-1.5 gap-2">
+            <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+            <input class="bg-transparent border-none focus:ring-secondary focus:border-secondary transition-all w-48 text-sm text-slate-200 placeholder-slate-500" placeholder="Search devices..." type="text"/>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-slate-300 cursor-pointer hover:text-cyan-300 hover:bg-white/5 p-2 rounded-full transition-all duration-300">account_circle</span>
+            <button class="bg-cyan-500 text-slate-950 font-bold px-6 py-2 rounded-full text-sm active:scale-95 opacity-80 duration-200 ease-in-out">Sign In</button>
+        </div>
+    </div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-gutter px-6 md:px-margin pb-32">
+<div class="max-w-7xl mx-auto">
+<!-- Hero Featured Section -->
+<section class="mb-lg">
+<div class="relative h-[500px] rounded-2xl overflow-hidden group">
+<img alt="AI Neural Network Visualization" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="abstract glowing blue neural network nodes connecting in a dark digital space with cinematic lighting and high tech aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxRUCKF2BsamABJylC-BQfOubBeTKTEhOSJQ_fk_6wB8frME1UXrN8YGd3AmFU8BuAUEcbXhb9h-gZiXnYQBLaHuZAS46_Nq0kK1sT54_OUbZfdT4YREgW9ksMDlaT0-aWAAMWYLicg0Tmpy3icoDNAY4ZxizxJ1-c5efnmLzeafWEQqaLjBcKbl9Wqc-M9MIR9AAqGxTgSjPrITU7kLpn7BmlhuU3bd91z6H72uregAeE3NGIkG6DHpim-uXtj5sM38l9K3W3IRcS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-gutter md:p-xl w-full md:w-3/4">
+<div class="flex items-center gap-3 mb-4">
+<span class="bg-secondary/20 text-secondary border border-secondary/30 px-3 py-1 rounded-full text-label-caps uppercase">Breaking Release</span>
+<span class="text-slate-400 text-sm">2 hours ago</span>
+</div>
+<h1 class="font-h1 text-h1 text-white mb-4 leading-tight">GPT-5 Synthesis: Redefining Multi-Modal Reasoning &amp; Logical Architecture</h1>
+<p class="font-body-lg text-body-lg text-primary max-w-2xl mb-8">OpenAI's latest iteration demonstrates a 40% improvement in zero-shot scientific reasoning, marking a significant leap toward specialized expert systems.</p>
+<button class="primary-gradient-btn px-8 py-3 rounded-full font-bold text-background hover:shadow-[0_0_20px_rgba(76,215,246,0.4)] transition-all flex items-center gap-2 group">
+                            Full Tech Analysis
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- News Grid + Sidebar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- News Feed -->
+<div class="lg:col-span-8 space-y-gutter">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-h2 text-h2 text-white">Latest Synthesis</h2>
+<div class="flex gap-2">
+<button class="p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-2 rounded bg-surface-container-high border border-secondary/30 text-secondary"><span class="material-symbols-outlined">view_list</span></button>
+</div>
+</div>
+<!-- News Card 1 -->
+<div class="glass-card rounded-xl overflow-hidden hover:border-secondary/40 transition-all flex flex-col md:flex-row gap-6 p-4">
+<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden rounded-lg">
+<img alt="Robotics Lab" class="w-full h-full object-cover" data-alt="advanced humanoid robot hand performing delicate assembly of a microchip in a clean sterile lab environment with cool blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8HzXLkCB8jzZDOqrPQReMC0HvzdXAfMMZuSQ2YXhR0y-2kHXLWdlNwrdAM0gOpMPPEJlCDiwtOpBQ7l8H4m5oZlZA8thjSzIfnAZy74Nr_9U-SIXy-2imO9j7APsJ_f965ML1ggWtNk98S8lrAq6KVGil2e1eAaMSsvKYy6SutCjdrK-T263UBBn2X9URfOQh73MCvVYzBt8V_KsLXzHW4Rd2p87sHjZ81eFypKyg9QVtZ20CgGTwFZfQW9H5kpq_VK-cLaJBl7-w"/>
+</div>
+<div class="md:w-2/3 flex flex-col justify-center">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] font-bold text-secondary-fixed-dim bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20 uppercase tracking-widest">Robotics</span>
+<span class="text-[10px] font-bold text-primary px-2 py-0.5 rounded border border-white/10 uppercase tracking-widest">Neural Nets</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-2 leading-snug">Figure AI 02 Integrates Vision-Language Control Systems</h3>
+<p class="text-primary text-sm line-clamp-2 mb-4">The new hardware revision utilizes a unified neural network to map vision directly to tactile motor control, eliminating legacy latency in human-robot collaboration.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-slate-500 text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span> 4h ago
+                                    <span class="mx-1">â€¢</span>
+<span class="material-symbols-outlined text-sm">chat_bubble</span> 24 comments
+                                </div>
+<button class="text-secondary hover:text-white transition-colors flex items-center gap-1 text-sm font-bold">
+                                    Compare Specs <span class="material-symbols-outlined text-sm">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- News Card 2 -->
+<div class="glass-card rounded-xl overflow-hidden hover:border-secondary/40 transition-all flex flex-col md:flex-row gap-6 p-4">
+<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden rounded-lg">
+<img alt="Quantum Computing" class="w-full h-full object-cover" data-alt="glowing quantum computer processor core with intricate golden circuitry and shimmering energy particles in a dark futuristic server room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6uDGU3_vBapQMPWvRVHZNue3g7gFKFNldEg8CB2fGkdV5p2NkZHi7Kav-EfkTRzbiaLw0GOYgr77v9kCfcXaxFViNeWXk47r0PntvAyXMSdjEQ76GjBREogsUqwwOzduh5mj8TOmtnqLPFxWm9p-s18HP-KUaZN9TewH4rN_7-85-P_kBeGrI5vRSN33hzTH3xnvGrVx1qIedCzRS6tcbYuUx_TfNVDeJgls1eM2FRykC9uT-kZWOBbqaiObF6jS6zHYOKwNExhxd"/>
+</div>
+<div class="md:w-2/3 flex flex-col justify-center">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] font-bold text-secondary-fixed-dim bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20 uppercase tracking-widest">Computing</span>
+<span class="text-[10px] font-bold text-primary px-2 py-0.5 rounded border border-white/10 uppercase tracking-widest">LLMs</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-2 leading-snug">Mistral Large 2: Open Weights Benchmark Leadership</h3>
+<p class="text-primary text-sm line-clamp-2 mb-4">A deep dive into how the 123B model outperforms proprietary rivals in coding efficiency and logical consistency across 80+ languages.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-slate-500 text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span> 8h ago
+                                    <span class="mx-1">â€¢</span>
+<span class="material-symbols-outlined text-sm">chat_bubble</span> 156 comments
+                                </div>
+<button class="text-secondary hover:text-white transition-colors flex items-center gap-1 text-sm font-bold">
+                                    Compare Specs <span class="material-symbols-outlined text-sm">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Comparison Table Inset (Bento Style) -->
+<div class="bg-surface-container rounded-2xl p-6 border border-white/5">
+<div class="flex items-center justify-between mb-6">
+<div>
+<h3 class="font-h3 text-h3 text-white">LLM Benchmark Pulse</h3>
+<p class="text-slate-500 text-xs uppercase tracking-widest font-bold mt-1">Live Synthesis Data</p>
+</div>
+<button class="text-secondary border border-secondary/20 px-4 py-1 rounded text-sm hover:bg-secondary/10 transition-all">View All Engines</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-white/10">
+<tr class="text-slate-500 font-label-caps">
+<th class="py-4 font-bold">Model Entity</th>
+<th class="py-4 font-bold">MMLU Score</th>
+<th class="py-4 font-bold">Code Contamination</th>
+<th class="py-4 font-bold">Context Window</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="py-4 text-white font-bold flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(76,215,246,0.6)]"></div>
+                                            GPT-4o
+                                        </td>
+<td class="py-4 text-secondary font-mono">88.7%</td>
+<td class="py-4 text-primary text-sm">Minimal</td>
+<td class="py-4 text-primary text-sm">128k</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="py-4 text-white font-bold flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_8px_rgba(168,85,247,0.6)]"></div>
+                                            Claude 3.5 Sonnet
+                                        </td>
+<td class="py-4 text-secondary font-mono">88.3%</td>
+<td class="py-4 text-primary text-sm">Undisclosed</td>
+<td class="py-4 text-primary text-sm">200k</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="py-4 text-white font-bold flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+                                            Llama 3.1 405B
+                                        </td>
+<td class="py-4 text-secondary font-mono">87.3%</td>
+<td class="py-4 text-primary text-sm">Low</td>
+<td class="py-4 text-primary text-sm">128k</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Sidebar Content -->
+<aside class="lg:col-span-4 space-y-gutter">
+<!-- Trending Section -->
+<div class="glass-card rounded-xl p-6">
+<h3 class="font-h3 text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+                            Trending Topics
+                        </h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface border border-white/10 hover:border-secondary transition-all cursor-pointer">#PromptEngineering</span>
+<span class="bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface border border-white/10 hover:border-secondary transition-all cursor-pointer">#GPUClusters</span>
+<span class="bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface border border-white/10 hover:border-secondary transition-all cursor-pointer">#EthicsInAI</span>
+<span class="bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface border border-white/10 hover:border-secondary transition-all cursor-pointer">#CUDA</span>
+<span class="bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface border border-white/10 hover:border-secondary transition-all cursor-pointer">#AgenticAI</span>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4 group cursor-pointer">
+<div class="text-2xl font-black text-slate-800 group-hover:text-secondary/20 transition-colors">01</div>
+<div>
+<h4 class="text-sm font-bold text-white group-hover:text-secondary transition-colors">NVIDIA Blackwell architecture ships to first cluster</h4>
+<p class="text-[10px] text-slate-500 uppercase mt-1">Infrastructure â€¢ 42.5k reads</p>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer">
+<div class="text-2xl font-black text-slate-800 group-hover:text-secondary/20 transition-colors">02</div>
+<div>
+<h4 class="text-sm font-bold text-white group-hover:text-secondary transition-colors">The rise of Small Language Models (SLMs) on edge devices</h4>
+<p class="text-[10px] text-slate-500 uppercase mt-1">Hardware â€¢ 38.1k reads</p>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer">
+<div class="text-2xl font-black text-slate-800 group-hover:text-secondary/20 transition-colors">03</div>
+<div>
+<h4 class="text-sm font-bold text-white group-hover:text-secondary transition-colors">PyTorch 2.4 adds advanced FP8 scaling support</h4>
+<p class="text-[10px] text-slate-500 uppercase mt-1">Frameworks â€¢ 29.3k reads</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Analysis Card -->
+<div class="bg-gradient-to-br from-tertiary-container to-background rounded-xl p-6 border border-white/10 relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl"></div>
+<h3 class="font-h3 text-white mb-4 relative z-10">AI Synthesis Newsletter</h3>
+<p class="text-primary text-sm mb-6 relative z-10">Get weekly technical deep-dives into model weights, benchmarks, and hardware architecture.</p>
+<div class="space-y-3 relative z-10">
+<input class="w-full bg-background/50 border-white/10 rounded-lg px-4 py-2 text-sm focus:ring-secondary focus:border-secondary" placeholder="Enter tech email..." type="email"/>
+<button class="w-full primary-gradient-btn py-2 rounded-lg text-background font-bold uppercase text-[12px] tracking-widest">Subscribe</button>
+</div>
+</div>
+</aside></div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-slate-950/90 backdrop-blur-lg border-t border-white/10 shadow-[0_-4px_24px_rgba(6,182,212,0.15)] font-['Space_Grotesk'] text-[10px] font-bold uppercase">
+<a class="flex flex-col items-center justify-center text-slate-500 active:bg-cyan-500/10 transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 active:bg-cyan-500/10 transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">grid_view</span>
+<span>Categories</span>
+</a>
+<a class="flex flex-col items-center justify-center text-cyan-400 drop-shadow-[0_0_8px_rgba(6,182,212,0.5)] active:bg-cyan-500/10 transition-all scale-110" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">rss_feed</span>
+<span>News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 active:bg-cyan-500/10 transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">person</span>
+<span>Account</span>
+</a>
+</nav>
+<script src="index.js"></script>
+</body></html>
+
+
